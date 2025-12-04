@@ -114,26 +114,46 @@ let variavelY = prompt("Digite outro número: ");
 }
 
 function botao5() {
-    let nota = Number(prompt("Forneça uma nota a ser avaliada: "));
+    let numero = prompt("Forneça uma nota a ser avaliada: ");
+
+    if (numero < 0 || numero === null || numero.trim() === "" || isNaN(Number(numero))) {
+    alert("Nenhum valor válido informado!");
+    console.log("Nenhum valor válido informado!");
+    return;
+}
+
+    let nota = Number(numero);
+
     if (nota <= 4) {
         alert(`A nota ${nota} é muito baixa!`);
         console.log(`A nota ${nota} é muito baixa!`);
-    } else if (nota >= 5) {
+    } else if (nota <= 7) {
         alert(`A nota ${nota} está na média.`);
-        console.logt(`A nota ${nota} está na média.`);
-    } else if (nota >= 8) {
+        console.log(`A nota ${nota} está na média.`);
+    } else{
         alert(`A nota informada ${nota} é alta!`);
         console.log(`A nota informada ${nota} é alta!`);
     }
 }
 
 function botao6() {
-    let peso = Number(prompt("Informe seu peso em kg: "));
-    let altura = Number(prompt("Informe sua altura em metros (Ex: 1.75): "));
+    let kg = prompt("Informe seu peso em kg (Exemplo: 60.0): ");
 
-    if (!peso || !altura || altura <= 0) {
-        alert("Valores inválidos, tente novamente.");
-    }
+    if (kg < 0 || kg === null || kg.trim() === "" || isNaN(Number(kg))) {
+    alert("Nenhum valor válido informado!");
+    console.log("Nenhum valor válido informado!");
+    return;
+}
+
+    let m = prompt("Informe sua altura em metros (Exemplo: 1.75): ");
+    if (m < 0 || m === null || m.trim() === "" || isNaN(Number(m))) {
+    alert("Nenhum valor válido informado!");
+    console.log("Nenhum valor válido informado!");
+    return;}
+
+    let peso = Number(kg);
+    let altura = Number(m);
+
 
     let imc = peso / (altura * altura);
     let classificacao = "";
@@ -161,18 +181,28 @@ function botao7() {
         `)
     );
 
-    if (isNaN(opcao) || opcao < 1 || opcao > 5) {
-        alert("Opção inválida! Tente novamente.");
+if (isNaN(opcao) || opcao < 1 || opcao > 5) {
+        alert("Nenhum valor válido informado!");
+        console.log("Nenhum valor válido informado!");
         return;
     }
 
-    let numeroA = Number(prompt("Informe um número: "));
-    let numeroB = Number(prompt("Informe outro número: "));
+    let a = prompt("Informe um número: ");
+    
+    if (a === null || a.trim() === "" || isNaN(Number(a))) {
+    alert("Nenhum valor válido informado!");
+    console.log("Nenhum valor válido informado!");
+    return;}
 
-    if (isNaN(numeroA) || isNaN(numeroB) || opcao < 1 || opcao > 5) {
-        alert("Valores inválidos, tente novamente.");
-        return;
-    }
+    let b = prompt("Informe outro número: ");
+
+    if (b === null || b.trim() === "" || isNaN(Number(b))) {
+    alert("Nenhum valor válido informado!");
+    console.log("Nenhum valor válido informado!");
+    return;}
+
+    let numeroA = Number(a);
+    let numeroB = Number(b);
 
 
     let adicao = numeroA + numeroB;
@@ -212,7 +242,7 @@ function botao7() {
 function botao8(){
     let diaDaSemana = Number(prompt("Informe um número de 1 a 7: "));
 
-    if (isNaN(diaDaSemana) || diaDaSemana > 7 || diaDaSemana === 0) {
+    if (isNaN(diaDaSemana) || diaDaSemana > 7 || diaDaSemana < 0) {
         alert("Valores inválidos, tente novamente.");
         return;
     }
@@ -257,8 +287,21 @@ function botao8(){
 
 
 function botao9() {
-    let x = Number(prompt("Digite um valor numérico: "));
-    let y = Number(prompt("Digite um valor numérico diferente: "));
+    let varX = prompt("Digite um valor numérico: ");
+
+    if (varX < 0 || varX === null || varX.trim() === "" || isNaN(Number(varX))) {
+    alert("Nenhum valor válido informado!");
+    console.log("Nenhum valor válido informado!");
+    return;}
+
+    let varY = prompt("Digite um valor numérico diferente: ");
+    if (varY < 0 || varY === null || varY.trim() === "" || isNaN(Number(varY))) {
+    alert("Nenhum valor válido informado!");
+    console.log("Nenhum valor válido informado!");
+    return;}
+
+    let x = Number(varX);
+    let y = Number(varY);
 
     if (isNaN(x) || isNaN(y)) {
     alert("Esses valores não são válidos, tente novamente!");
