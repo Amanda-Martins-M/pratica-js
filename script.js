@@ -340,6 +340,8 @@ const header = document.getElementById("header");
 const body = document.getElementById("body");
 const titulo = document.getElementById("titulo");
 const texto = document.getElementById("texto");
+const texto2 = document.getElementById("texto2");
+const lista = document.getElementById("lista");
 const botoes = document.getElementsByClassName("botoes");
 
 ativador.addEventListener('click', () => {
@@ -347,9 +349,10 @@ ativador.addEventListener('click', () => {
     body.classList.toggle("bg-dm");
     titulo.classList.toggle("titulo-dm");
     texto.classList.toggle("texto-dm");
+    texto2.classList.toggle("texto-dm");
+    lista.classList.toggle("texto-dm");
 
     for (let btn of botoes) {
         btn.classList.toggle("botoes-dm");
     }
-
 })
