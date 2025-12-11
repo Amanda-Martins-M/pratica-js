@@ -15,6 +15,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+
 </head>
 
 <body id="body" class="">
@@ -23,33 +26,61 @@
         <img class="logo" src="assets/img/js-logo.svg" alt="Logo representativo da linguagem JavaScript.">
     </header>
     <main>
-        <h1 id="titulo" class="titulo">Explorando funções JavaScript</h1>
-            <p id="texto" class=""> Nesta página serão vistos ferramentas simples que foram feitas com elementos <strong>fundamentais</strong> do JavaScript, tais como:</p>
-                <ul id="lista">
-                <li>prompt( );</li>
-                <li>console.log( );</li>
-                <li>if (simples, composto e encadeado);</li>
-                <li>switch/case;</li>
-                <li>Operadores de comparação;</li>
-                <li>Operadores aritméticos.</li>
-            </ul>
-            
-                <p id="texto2">Navegue pelos botões abaixo para testar os recursos.</p>
-        
+        <h1 id="titulo" class="titulo">Explorando fundamentos JavaScript</h1>
+        <p id="texto" class=""> Nesta página serão vistos ferramentas simples que foram feitas com elementos
+            <strong>fundamentais</strong> do JavaScript, tais como:</p>
+        <ul id="lista">
+            <li>prompt( );</li>
+            <li>console.log( );</li>
+            <li>if (simples, composto e encadeado);</li>
+            <li>switch/case;</li>
+            <li>Operadores de comparação;</li>
+            <li>Operadores aritméticos.</li>
+        </ul>
+
+        <p id="texto2">Navegue pelos botões abaixo para testar os recursos.</p>
+
 
         <div class="grid">
-            <button onclick=botao1() class="botoes"><img class="imagem" src="assets/img/tag.svg" alt="Símbolo de fechamento de tag html">Positivo, negativo ou zero</button>
-            <button onclick=botao2() class="botoes"><img class="imagem" src="assets/img/tag.svg" alt="Símbolo de fechamento de tag html">Verificar maioridade</button>
-            <button onclick=botao3() class="botoes"><img class="imagem" src="assets/img/tag.svg" alt="Símbolo de fechamento de tag html">Par ou ímpar</button>
-            <button onclick=botao4() class="botoes"><img class="imagem" src="assets/img/tag.svg" alt="Símbolo de fechamento de tag html">Comparação de números</button>
-            <button onclick=botao5() class="botoes"><img class="imagem" src="assets/img/tag.svg" alt="Símbolo de fechamento de tag html">Classificação de notas</button>
-            <button onclick=botao6() class="botoes"><img class="imagem" src="assets/img/tag.svg" alt="Símbolo de fechamento de tag html">Calculadora IMC</button>
-            <button onclick=botao7() class="botoes"><img class="imagem" src="assets/img/tag.svg" alt="Símbolo de fechamento de tag html">Calculadora simples</button>
-            <button onclick=botao8() class="botoes"><img class="imagem" src="assets/img/tag.svg" alt="Símbolo de fechamento de tag html">Dia da semana</button>
-            <button id="botao1" onclick=botao9() class="botoes"><img class="imagem" src="assets/img/tag.svg" alt="Símbolo de fechamento de tag html">Múltiplos</button>
-            <button onclick=botao10() class="botoes"><img class="imagem" src="assets/img/tag.svg" alt="Símbolo de fechamento de tag html">Login simples</button>
+            <button onclick=botao1() class="botoes"><i class="fi fi-ts-code-simple"></i>Positivo, negativo ou zero</button>
+            <button onclick=botao2() class="botoes"><i class="fi fi-ts-code-simple"></i>Verificar maioridade</button>
+            <button onclick=botao3() class="botoes"><i class="fi fi-ts-code-simple"></i>Par ou ímpar</button>
+            <button onclick=botao4() class="botoes"><i class="fi fi-ts-code-simple"></i>Comparação de números</button>
+            <button onclick=botao5() class="botoes"><i class="fi fi-ts-code-simple"></i>Classificação de notas</button>
+            <button onclick=botao6() class="botoes"><i class="fi fi-ts-code-simple"></i>Calculadora IMC</button>
+            <button onclick=botao7() class="botoes"><i class="fi fi-ts-code-simple"></i>Calculadora simples</button>
+            <button onclick=botao8() class="botoes"><i class="fi fi-ts-code-simple"></i>Dia da semana</button>
+            <button id="botao1" onclick=botao9() class="botoes"><i class="fi fi-ts-code-simple"></i>Múltiplos</button>
+            <button onclick=botao10() class="botoes"><i class="fi fi-ts-code-simple"></i>Login simples</button>
         </div>
 
+
+        <h2 id="titulo2" class="titulo2">Loops e funções</h2>
+        <p id="texto3">Nos botões abaixo teremos alguns exemplos feitos com loops de repetição e funções (para
+            visualizar cada um funcionando corretamente, inspecione a página e abra o 'console'). Os loops e funções usados foram:</p>
+
+        <ul id="lista2">
+            <li>for</li>
+            <li>while</li>
+            <li>do...while</li>
+            <li>function</li>
+        </ul>
+
+        <div class="grid">
+            <button onclick=botao11() class="botoes"><i class="fi fi-ts-arrows-repeat"></i>Contador: 1 a 10</button>
+            <button onclick=botao12() class="botoes"><i class="fi fi-ts-arrows-repeat"></i>Contando e somando: 1 a 50
+            </button>
+            <button onclick=botao13() class="botoes"><i class="fi fi-ts-arrows-repeat"></i>Contagem regressiva
+            </button>
+            <button onclick=botao14() class="botoes"><i class="fi fi-ts-arrows-repeat"></i>"Ok" = encerra o loop</button>
+            <button onclick=botao15() class="botoes"><i class="fi fi-ts-arrows-repeat"></i>Tabuada de 'x'</button>
+            <button onclick=botao16() class="botoes"><i class="fi fi-ts-arrows-repeat"></i>Números pares até 100</button>
+            <button onclick=botao17() class="botoes"><i class="fi fi-ts-arrows-repeat"></i>Separação de caracteres</button>
+            <button onclick=botao18() class="botoes"><i class="fi fi-ts-arrows-repeat"></i>Quadrado de 'x'</button>
+            <button id="botao2" onclick=botao19() class="botoes"><i class="fi fi-ts-arrows-repeat"></i>Repetir uma frase 'x'
+                vezes</button>
+            <button onclick=botao20() class="botoes"><i class="fi fi-ts-arrows-repeat"></i>Senha: 3 tentativas</button>
+        </div>
     </main>
 
     <script src="script.js"></script>

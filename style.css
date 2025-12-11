@@ -8,17 +8,21 @@
     --cor-branca: #FFFFFF;
     --cor-azul-escuro: #0C0224;
     --cor-preta: #000000;
-    --cor-preta-sombra: rgba(0, 0, 0, 0.25);
+    --cor-preta-sombra: rgba(0, 0, 0, 0.15);
 
 
     font-family: inter, sans-serif;
 
 }
 
-* {
+*,
+::after,
+::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    transition: all 200ms ease-in;
 }
 
 html,
@@ -38,7 +42,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 p {
@@ -73,11 +76,21 @@ header {
     padding: 1.375rem;
 }
 
+.titulo2{
+    font-size: 1.5rem;
+    padding: 1.375rem;
+}
+
 .logo {
     border-radius: 8px;
 }
 
-.imagem {
+i{
+    font-size: 1.75rem;
+    padding-top: 0.50rem;
+}
+
+.imagem{
     height: 1.75rem;
     width: 1.75rem;
 }
@@ -122,7 +135,7 @@ header {
     border: none;
     flex-direction: row;
     padding: 0.906rem;
-    padding-top: 1.313rem;
+    margin-top: 1.313rem;
     border-radius: 10px;
     font-size: 1rem;
     font-family: inter, sans-serif;
@@ -142,6 +155,13 @@ header {
     color: var(--cor-branca);
     font-family: inter, sans-serif;
     font-size: 1.8rem;
+    padding: 1.375rem;
+}
+
+.titulo2-dm {
+    color: var(--cor-branca);
+    font-family: inter, sans-serif;
+    font-size: 1.5rem;
     padding: 1.375rem;
 }
 
@@ -178,6 +198,9 @@ header {
     p {
         min-width: 80%;
     }
+    .grid{
+        margin-bottom: 2rem;
+    }
 }
 
 @media (min-width:415px) {
@@ -187,6 +210,9 @@ header {
         width: 22rem;
         height: 3rem;
     }
+    .grid{
+        margin-bottom: 2rem;
+    }
 }
 
 @media (min-width:550px) {
@@ -195,6 +221,9 @@ header {
     .botoes-dm {
         width: 25rem;
         height: 3rem;
+    }
+    .grid{
+        margin-bottom: 2rem;
     }
 }
 
@@ -209,7 +238,7 @@ header {
         justify-content: center;
     }
 
-    #botao1 {
+    #botao1, #botao2 {
         grid-column-start: 2;
     }
 
@@ -218,6 +247,7 @@ header {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 1.5rem;
+        padding-bottom: 2rem;
     }
 
     main {
