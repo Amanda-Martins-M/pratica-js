@@ -379,6 +379,12 @@ function botao13() {
 
     b = Number(varB);
 
+    if(b > 200){
+            alert("O limite para a contagem regressiva é de '200'!");
+            console.log("O limite para a contagem regressiva é de '200'!");
+            return;
+        }
+
     for (let i = b; i >= 0; i--) {
         console.log("Contagem regressiva:", i);
     }
